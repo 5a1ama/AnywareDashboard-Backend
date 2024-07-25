@@ -40,7 +40,7 @@ connect();
 //app.use(cors());
 //for production
 app.use(cors({
-    origin: 'https://student-dashboard-frontend-phi.vercel.app/', 
+    origin: 'https://student-dashboard-frontend-phi.vercel.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],}));
 app.use(express.json());
