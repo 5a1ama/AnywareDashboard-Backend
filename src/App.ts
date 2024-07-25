@@ -46,9 +46,9 @@ app.use(cors({
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json({limit:'20mb'}));
-app.use("/",quizesRouter);
-app.use("/",announcementsRouter);
-app.use("/",usersRouter);
+app.use("/quizes",quizesRouter);
+app.use("/announcements",announcementsRouter);
+app.use("/users",usersRouter);
 
 app.options('*', cors({
     origin: 'https://student-dashboard-frontend-phi.vercel.app',
