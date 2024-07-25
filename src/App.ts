@@ -40,7 +40,7 @@ app.use(express.json());
 //for development
 //app.use(cors());
 //for production
-app.use(cors({origin: 'https://student-dashboard-frontend-blond.vercel.app'}));
+app.use(cors({origin: 'https://student-dashboard-frontend-blond.vercel.app/'}));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json({limit:'20mb'}));
 app.use("/",quizesRouter);
