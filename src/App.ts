@@ -36,26 +36,27 @@ async function connect()
 
 connect();
 
+// Enable CORS
 //for development
 //app.use(cors());
 //for production
 app.use(cors({
     origin: 'https://student-dashboard-frontend-phi.vercel.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],}));
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials:true}));
+
+// Body parsing middleware
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json({limit:'20mb'}));
-app.use("/quizes",quizesRouter);
-app.use("/announcements",announcementsRouter);
-app.use("/users",usersRouter);
 
-app.options('*', cors({
-    origin: 'https://student-dashboard-frontend-phi.vercel.app',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-  }));
+// Route handlers
+app.use("/",announcementsRouter);
+app.use("/",quizesRouter);
+app.use("/",usersRouter);
 
+// Start the server
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 });
