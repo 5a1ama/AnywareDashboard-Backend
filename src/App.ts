@@ -50,6 +50,12 @@ app.use("/",quizesRouter);
 app.use("/",announcementsRouter);
 app.use("/",usersRouter);
 
+app.options('*', cors({
+    origin: 'https://student-dashboard-frontend-phi.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  }));
+
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 });
