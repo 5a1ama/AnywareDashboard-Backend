@@ -42,7 +42,7 @@ app.use(express.json());
 //for production
 app.use(cors({
     origin: 'https://student-dashboard-frontend-phi.vercel.app/', 
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],}));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json({limit:'20mb'}));
