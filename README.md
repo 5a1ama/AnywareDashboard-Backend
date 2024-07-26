@@ -17,8 +17,6 @@ This Project was built using MERN stack
 * [![React][React.js]][React-url]
 * [![Node][Node.js]][Node-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Installation
 
 1. Clone this repo for the backend
@@ -49,3 +47,4 @@ This Project was built using MERN stack
    ```sh
    npm start 
    ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
