@@ -8,19 +8,19 @@ import express, { Express } from 'express';
 const app: Express = express();
 const port = process.env.PORT || 8000;
 //models
-import quizesModel from './Models/quizes';
-import announcementsModel from './Models/announcements';
-import usersModel from './Models/users';
+import quizesModel from './src/Models/quizes';
+import announcementsModel from './src/Models/announcements';
+import usersModel from './src/Models/users';
 //routers
-import quizesRouter from './Routes/quizesRouter';
-import announcementsRouter from './Routes/announcementsRouter';
-import usersRouter from './Routes/usersRouter'
+import quizesRouter from './src/Routes/quizesRouter';
+import announcementsRouter from './src/Routes/announcementsRouter';
+import usersRouter from './src/Routes/usersRouter'
 //usages
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
 
-
+// Connect to mongoDB
 async function connect()
 {
     try
@@ -33,16 +33,7 @@ async function connect()
         console.error(error);
     }
 }
-
 connect();
-
-// Enable CORS for deployment
-// app.use(cors({
-//     origin: 'https://student-dashboard-frontend-phi.vercel.app', 
-//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-//     allowedHeaders: ['Content-Type', 'Authorization'],
-//     credentials:true}));
-// app.options('*', cors()); // For preflight requests
 
 // Enable CORS for development
 app.use(cors());
