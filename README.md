@@ -10,7 +10,7 @@
 
 ### Deployed Full-stack Project Link
 
-- https://student-dashboard-frontend-one.vercel.app
+- https://anyware-dashboard-one.vercel.app
 
 Frontend repo deployed on [Vercel.com](https://vercel.com/)
 <br/>
