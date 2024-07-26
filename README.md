@@ -49,4 +49,3 @@ This Project was built using MERN stack
    ```sh
    npm start 
    ```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
