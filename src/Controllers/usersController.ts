@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import users from '../Models/users';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({ path: '../.env' });
 
 export const register = async (req :Request, res:Response) => {
     try {

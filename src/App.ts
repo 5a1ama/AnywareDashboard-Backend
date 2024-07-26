@@ -1,7 +1,8 @@
 //mongoDB
 import mongoose from 'mongoose';
+//dotenv
 import dotenv from 'dotenv'
-dotenv.config();
+dotenv.config({ path: '../.env' });
 //express
 import express, { Express } from 'express';
 const app: Express = express();
@@ -17,7 +18,6 @@ import usersRouter from './Routes/usersRouter'
 //usages
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import cookieParser from 'cookie-parser';
 
 
 
@@ -36,15 +36,16 @@ async function connect()
 
 connect();
 
-// Enable CORS
-//for development
-//app.use(cors());
-//for production
-app.use(cors({
-    origin: 'https://student-dashboard-frontend-phi.vercel.app', 
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials:true}));
+// Enable CORS for deployment
+// app.use(cors({
+//     origin: 'https://student-dashboard-frontend-phi.vercel.app', 
+//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+//     allowedHeaders: ['Content-Type', 'Authorization'],
+//     credentials:true}));
+// app.options('*', cors()); // For preflight requests
+
+// Enable CORS for development
+app.use(cors());
 
 // Body parsing middleware
 app.use(express.json());
