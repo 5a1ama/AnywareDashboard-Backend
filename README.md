@@ -16,7 +16,7 @@ Frontend repo deployed on [Vercel.com](https://vercel.com/)
 <br/>
 Backend repo deployed on [Render.com](https://render.com/)
 
-Here is the deployed backend url for APIs: https://studentdashboard-backend.onrender.com
+Here is the deployed backend url for APIs: https://anywaredashboard-backend.onrender.com
 
 ---
 
