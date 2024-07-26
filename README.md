@@ -8,7 +8,7 @@
 [MongoDB]: https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white
 [MongoDB-url]: https://www.mongodb.com/
 
-### Built With
+### Fullstack Project Built With
 
 This Project was built using MERN stack
 
@@ -19,7 +19,7 @@ This Project was built using MERN stack
 
 ---
 
-### Installation
+### Installation For Fullstack Project
 
 1. Clone this repo for the backend
    ```sh
