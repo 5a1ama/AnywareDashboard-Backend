@@ -17,6 +17,8 @@ This Project was built using MERN stack
 * [![React][React.js]][React-url]
 * [![Node][Node.js]][Node-url]
 
+---
+
 ### Installation
 
 1. Clone this repo for the backend
