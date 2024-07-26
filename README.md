@@ -12,10 +12,11 @@
 
 - https://student-dashboard-frontend-one.vercel.app
 
-Frontend repo deployed on Vercel
-Backend repo deployed on Render
+Frontend repo deployed on [Vercel.com](https://vercel.com/)
+<br/>
+Backend repo deployed on [Render.com](https://render.com/)
 
-Here is the backend url for APIs: https://studentdashboard-backend.onrender.com
+Here is the deployed backend url for APIs: https://studentdashboard-backend.onrender.com
 
 ### Full-stack Project Built With
 
