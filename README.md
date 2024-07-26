@@ -10,8 +10,12 @@
 
 ### Deployed Full-stack Project Link
 
-Backend on Render.com: https://studentdashboard-backend.onrender.com <br/>
-Frontend on Vercel.com: https://student-dashboard-frontend-one.vercel.app
+- https://student-dashboard-frontend-one.vercel.app
+
+Frontend repo deployed on Vercel
+Backend repo deployed on Render
+
+Here is the backend url for APIs: https://studentdashboard-backend.onrender.com
 
 ### Full-stack Project Built With
 
